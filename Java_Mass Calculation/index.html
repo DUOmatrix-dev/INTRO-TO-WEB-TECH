@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mass Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mass Converter</h1>
+        <p>Convert mass from one unit to another.</p>
+
+        <!-- Input field for entering the mass -->
+        <label>Enter Mass:</label>
+        <input type="number" id="mass" placeholder="Enter a value">
+
+        <!-- Select the unit to convert from -->
+        <label>Convert From:</label>
+        <select id="fromUnit">
+            <option value="kg">Kilograms</option>
+            <option value="g">Grams</option>
+            <option value="lb">Pounds</option>
+            <option value="mg">Milligrams</option>
+        </select>
+
+        <!-- Select the unit to convert to -->
+        <label>Convert To:</label>
+        <select id="toUnit">
+            <option value="g">Grams</option>
+            <option value="kg">Kilograms</option>
+            <option value="lb">Pounds</option>
+            <option value="mg">Milligrams</option>
+        </select>
+
+        <!-- Button used to carry out the conversion -->
+        <button onclick="convertMass()">Convert</button>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
